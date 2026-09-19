@@ -144,6 +144,9 @@ details.card[open] summary .chev{transform:rotate(180deg)}
   background:linear-gradient(135deg,var(--teal),#5EEAD4 55%,var(--gold));color:#06231F;
   box-shadow:0 12px 32px rgba(45,212,191,.5),inset 0 1px 0 rgba(255,255,255,.5)}
 main{padding-bottom:96px}
+.card{content-visibility:auto;contain-intrinsic-size:auto 320px}
+header,#fab{transform:translateZ(0)}
+@media (prefers-reduced-motion:reduce){main{animation:none}}
 ::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.16);border-radius:8px}
 @media(max-width:520px){main{padding:12px}.card{padding:15px;border-radius:20px;margin-bottom:12px}.kpi b{font-size:19px}th,td{padding:9px 7px}#stickyMini{flex-basis:100%;text-align:right}}
 @media(prefers-reduced-transparency:reduce){header,.card,.kpi{backdrop-filter:none;-webkit-backdrop-filter:none}}
@@ -227,7 +230,7 @@ tr.grp td{background:rgba(167,139,250,.10)!important;font-weight:750;color:#DDD6
 <div id="txns"></div>
 <div class="btnRow"><button id="expCsv" class="ghost">Export CSV</button><button id="expJson" class="ghost">Backup</button></div>
 <button id="wipe">Clear all entries</button></details>
-<div class="card hint">Add to Home Screen to install • Offline • v2</div>
+<div class="card hint">Personal Budget • Offline • Private on this device • v2</div>
 </main>
 <button id="fab" title="Add entry">+</button>
 <div id="toast"></div>
